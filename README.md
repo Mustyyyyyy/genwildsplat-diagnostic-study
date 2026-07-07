@@ -6,7 +6,9 @@ The notebook focuses on inference-time behavior using the public GenWildSplat im
 
 ## Notebook
 
-- `genwildsplat_diagnostic.ipynb` — cleaned notebook with section headings and outputs
+- `genwildsplat_diagnostic.ipynb` — cleaned notebook with section headings and outputs Link: 
+- `genwildsplat_diagnostic_clean_no_outputs.ipynb` — lightweight version without outputs, suitable for faster GitHub loading
+
 
 ## Study Overview
 
