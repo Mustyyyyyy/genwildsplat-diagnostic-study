@@ -1,20 +1,16 @@
-# GenWildSplat Diagnostic Study
+# GenWildSplat Diagnostic Notebook
 
-This repository contains a compact diagnostic study of GenWildSplat, a feed-forward method for sparse-view 3D reconstruction from unconstrained images.
+This repository contains a cleaned notebook for a compact diagnostic study of GenWildSplat, a feed-forward method for sparse-view 3D reconstruction from unconstrained images.
 
-The goal of this project is not to reproduce the full benchmark suite from the original paper, but to study inference-time behavior on a small diagnostic set and to evaluate the sensitivity of the pipeline to occlusion masks.
+The notebook focuses on inference-time behavior using the public GenWildSplat implementation and pretrained checkpoint. It includes environment setup, reproduction sanity checks, diagnostic evaluation on selected Mip-NeRF 360 scenes, and an occlusion-mask sensitivity analysis comparing blank masks with YOLOv8-generated masks.
 
-## Contents
+## Notebook
 
-- `report.pdf` — short technical report
-- `main.tex` — LaTeX source for the report
-- `figures/` — figures used in the report
-- `metrics.csv` — diagnostic metrics
-- `notebooks/` — cleaned notebook used for the experiments
+- `genwildsplat_diagnostic.ipynb` — cleaned notebook with section headings and outputs
 
-## Summary
+## Study Overview
 
-The study evaluates GenWildSplat on nine Mip-NeRF 360 scenes:
+The notebook evaluates GenWildSplat on nine Mip-NeRF 360 scenes:
 
 - garden
 - stump
@@ -26,9 +22,12 @@ The study evaluates GenWildSplat on nine Mip-NeRF 360 scenes:
 - bonsai
 - room
 
-The experiments compare blank masks against YOLOv8-generated masks to measure occlusion-mask sensitivity.
+The main diagnostic questions are:
 
-## Notebook
+1. How does reconstruction quality vary across different scene types?
+2. How sensitive are the results to the semantic occlusion-mask prior?
+
+## Kaggle Version
 
 The notebook was developed and run in a Kaggle GPU environment.
 
@@ -36,6 +35,6 @@ Kaggle notebook: ADD LINK HERE
 
 ## Notes
 
-This is an inference-time diagnostic study using the public GenWildSplat implementation and pretrained checkpoint. It does not include retraining and does not claim to reproduce the full benchmark suite from the original paper.
+This is an inference-time diagnostic notebook. It does not include model retraining and does not claim to reproduce the full benchmark suite from the original paper.
 
 Original GenWildSplat repository: https://github.com/Vinayak-VG/GenWildSplat
